@@ -1,0 +1,30 @@
+.list-item {
+  cursor: pointer;
+  /* width: max-content; */
+}
+
+.list-item:hover {
+  color: red;
+  text-decoration: line-through;
+}
+
+.container {
+  width: 60%;
+  margin: 10vh auto;
+  /* text-align: center; */
+}
+
+.form--container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.todo {
+  text-align: center;
+}
+
+form button,
+form input {
+  border-radius: 10px;
+  padding: 0.25em 0.5em;
+}

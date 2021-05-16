@@ -1,0 +1,38 @@
+#modal {
+  display: none;
+  transform: scale(0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  transition: all 4000ms ease-in-out;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  transform: scale(0);
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 4000ms ease-in-out;
+}
+
+#modal.open,
+#overlay.open {
+  display: block;
+  transform: scale(1);
+  /* why won't transitions work here?? */
+  transition: all 4000ms ease-in-out;
+}
+
+#open-modal-btn {
+  width: 200px;
+}
